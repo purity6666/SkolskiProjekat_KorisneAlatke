@@ -52,8 +52,6 @@ public class KonvertorActivity extends AppCompatActivity {
                 bTV.setText("Binarno: " + Integer.toBinaryString(broj));
                 oTV.setText("Oktalno: " + Integer.toOctalString(broj));
                 hTV.setText("Heksadecimalno: " + Integer.toHexString(broj));
-
-                editText.getText().clear();
             }
         });
 
