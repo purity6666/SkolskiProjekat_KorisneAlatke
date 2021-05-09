@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KonvertorActivity"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/prevedi_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prevedi"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextNumber"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumber"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber"
+        app:layout_constraintVertical_bias="0.04000002" />
+
+    <TextView
+        android:id="@+id/binarno_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Binarno: "
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/oktalno_tv"
+        app:layout_constraintEnd_toEndOf="@+id/oktalno_tv"
+        app:layout_constraintStart_toStartOf="@+id/oktalno_tv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95" />
+
+    <TextView
+        android:id="@+id/heksadecimalno_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heksadecimalno: "
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/oktalno_tv"
+        app:layout_constraintStart_toStartOf="@+id/oktalno_tv"
+        app:layout_constraintTop_toBottomOf="@+id/oktalno_tv"
+        app:layout_constraintVertical_bias="0.050000012" />
+
+    <TextView
+        android:id="@+id/oktalno_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oktalno: "
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:text="Kako ručno računati?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heksadecimalno_tv"
+        app:layout_constraintVertical_bias="0.65999997" />
+</androidx.constraintlayout.widget.ConstraintLayout>
