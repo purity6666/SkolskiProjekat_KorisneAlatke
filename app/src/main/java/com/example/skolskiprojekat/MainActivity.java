@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse("https://edukacija.rs/matematika/osnovna-skola")));
                 break;
             case R.id.tutorijal_btn:
-                startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse("http://majmune.com/?i=1")));
+                Toast.makeText(this, "Sajt još uvijek ne funkcioniše", Toast.LENGTH_SHORT).show();
                 break;
             default:
                 break;
